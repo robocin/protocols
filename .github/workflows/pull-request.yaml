@@ -1,0 +1,31 @@
+name: pull-request
+on: [ pull_request ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: bufbuild/buf-setup-action@v1
+        with:
+          version: "1.20.0"
+      - uses: bufbuild/buf-lint-action@v1
+        with:
+          version: "1.20.0"
+      - uses: bufbuild/buf-breaking-action@v1
+        with:
+          against: "https://github.com/${GITHUB_REPOSITORY}.git#branch=main"
+
+  formatting-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: bufbuild/buf-setup-action@v1
+        with:
+          version: "1.20.0"
+      - run: |
+          buf format -d --exit-code
+          if [ $? -eq 1 ]; then
+            echo "buf format failed, please run 'buf format -w' locally in the project root and commit the changes."
+            exit 1
+          fi
