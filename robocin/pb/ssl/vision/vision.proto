@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package robocin.pb.ssl.vision;
+
+import "google/protobuf/timestamp.proto";
+import "robocin/pb/utility/geometry.proto";
+
+message Ball {
+  utility.Point3Df position = 1;
+  utility.Point3Df velocity = 2;
+}
+
+message Robot {
+  enum Color {
+    COLOR_UNSPECIFIED = 0;
+    COLOR_YELLOW = 1;
+    COLOR_BLUE = 2;
+  }
+
+  Color color = 1;
+  int32 id = 2;
+
+  utility.Point2Df position = 3;
+  float angle = 4;
+
+  utility.Point2Df velocity = 5;
+  float angular_velocity = 6;
+}
+
+message Field {
+  uint64 id = 1;
+  google.protobuf.Timestamp timestamp = 2;
+
+  float length = 3;
+  float width = 4;
+  float goal_depth = 5;
+  float goal_width = 6;
+  float penalty_area_depth = 7;
+  float penalty_area_width = 8;
+  float boundary_width = 9;
+  float goal_center_to_penalty_mark = 10;
+}
+
+message Frame {
+  uint64 id = 1;
+  google.protobuf.Timestamp timestamp = 2;
+
+  Ball ball = 4;
+
+  repeated Robot robots = 5;
+}
