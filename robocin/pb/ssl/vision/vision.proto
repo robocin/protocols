@@ -12,7 +12,7 @@ message Ball {
 
 message Robot {
   enum Color {
-    COLOR_UNDEFINED = 0;
+    COLOR_UNSPECIFIED = 0;
     COLOR_YELLOW = 1;
     COLOR_BLUE = 2;
   }
