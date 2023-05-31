@@ -1,3 +1,5 @@
+[![Lint and Formatting Checker](https://github.com/robocin/protocols/actions/workflows/lint-and-formatting-checker.yaml/badge.svg)](https://github.com/robocin/protocols/actions/workflows/lint-and-formatting-checker.yaml)
+
 # [wip] RobôCIn Protocols 📦
 
 The RobôCIn Protocols repository is a central hub dedicated to storing and managing protocols that are intended to be
