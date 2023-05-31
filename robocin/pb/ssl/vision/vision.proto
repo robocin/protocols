@@ -12,13 +12,13 @@ message Ball {
 
 message Robot {
   enum Color {
-    COLOR_UNSPECIFIED = 0;
+    COLOR_UNSDEFINED = 0;
     COLOR_YELLOW = 1;
     COLOR_BLUE = 2;
   }
 
   Color color = 1;
-  int32 id = 2;
+  int32 id = 1;
 
   utility.Point2Df position = 3;
   float angle = 4;

@@ -2,7 +2,7 @@ name: pull-request
 on: [ pull_request ]
 
 jobs:
-  build:
+  lint-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
