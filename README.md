@@ -1,4 +1,4 @@
-[![Lint and Formatting Checker](https://github.com/robocin/protocols/actions/workflows/lint-and-formatting-checker.yaml/badge.svg)](https://github.com/robocin/protocols/actions/workflows/lint-and-formatting-checker.yaml)
+[![Lint and Formatting Checker](https://github.com/robocin/protocols/actions/workflows/lint-and-formatting-checker.yaml/badge.svg?branch=main)](https://github.com/robocin/protocols/actions/workflows/lint-and-formatting-checker.yaml)
 
 # [wip] RobôCIn Protocols 📦
 
