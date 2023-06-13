@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package robocin.pb.ssl.vision;
 
-import "google/protobuf/any.proto";
 import "robocin/pb/utility/geometry.proto";
 
 message Robot {
