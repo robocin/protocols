@@ -4,8 +4,8 @@ package robocin.pb.ssl.vision;
 
 import "google/protobuf/timestamp.proto";
 import "robocin/pb/ssl/vision/ball.proto";
-import "robocin/pb/ssl/vision/robot.proto";
 import "robocin/pb/ssl/vision/field.proto";
+import "robocin/pb/ssl/vision/robot.proto";
 
 message Frame {
   uint64 serial_id = 1;

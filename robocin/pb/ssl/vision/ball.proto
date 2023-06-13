@@ -3,8 +3,8 @@ syntax = "proto3";
 package robocin.pb.ssl.vision;
 
 import "google/protobuf/timestamp.proto";
-import "robocin/pb/utility/geometry.proto";
 import "robocin/pb/ssl/vision/robot.proto";
+import "robocin/pb/utility/geometry.proto";
 
 message Ball {
   utility.Point3Df position = 1;
