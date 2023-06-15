@@ -1,6 +1,7 @@
 [![Lint and Formatting Checker](https://github.com/robocin/protocols/actions/workflows/lint-and-formatting-checker.yaml/badge.svg?branch=main)](https://github.com/robocin/protocols/actions/workflows/lint-and-formatting-checker.yaml)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04%2B-orange.svg)](https://ubuntu.com/)
-[![CMake](https://img.shields.io/badge/CMake-3.16-blue.svg)](https://cmake.org/)
+[![C++](https://img.shields.io/badge/C%2B%2B-20%2B-darkblue.svg)](https://en.cppreference.com/w/cpp/20)
+[![CMake](https://img.shields.io/badge/CMake-3.16%2B-blue.svg)](https://cmake.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 # RobôCIn Protocols 📦
