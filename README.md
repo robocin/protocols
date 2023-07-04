@@ -7,9 +7,9 @@
 # RobôCIn Protocols 📦
 
 The RobôCIn Protocols repository is a central hub dedicated to storing and managing protocols that are intended to be
-shared across multiple projects. It serves as a reliable source of truth for the latest versions of the protocols
-definitions, providing an organized directory structure that categorizes and documents each protobuf file, making it
-simple for developers to navigate and understand the available data structures.
+shared across multiple projects. It serves as a reliable source of the latest versions of the protocols definitions,
+providing an organized directory structure that categorizes and documents each protobuf file, making it simple for
+developers to navigate and understand the available data structures.
 
 By centralizing protocols in a dedicated repository, the RobôCIn team promotes code reuse, modularity, and efficient
 development practices. Any updates or modifications to the shared protocols can be made in a controlled manner, ensuring
@@ -17,12 +17,16 @@ compatibility across multiple repositories that depend on these protocols.
 
 ## Table of Contents
 
-- [About](#about)
-    - [Protobufs](#protobufs)
-- [Installation](#install)
-    - [C++](#cpp)
-- [Codemap](#codemap)
-- [License](#license)
+- [RobôCIn Protocols 📦](#robôcin-protocols-)
+    - [Table of Contents](#table-of-contents)
+    - [About](#about)
+        - [Protobufs](#protobufs)
+    - [Installation](#installation)
+        - [C++](#c)
+            - [Requirements](#requirements)
+            - [Steps](#steps)
+    - [Codemap](#codemap)
+    - [License](#license)
 
 <a name="about"></a>
 
@@ -52,7 +56,7 @@ installation instructions specific to your programming language.
 ## Installation
 
 > **Note**: If you intend to utilize this repository on an alternative operating system, please don't hesitate to
-> raise an issue. We are committed to providing support and helping you modify the installation process to suit your
+> raise an issue. We are committed to providing support by helping you modify the installation process to suit your
 > specific OS requirements.
 
 <a name="cpp"></a>

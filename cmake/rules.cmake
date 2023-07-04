@@ -5,12 +5,12 @@ include(helpers)
 
 ########################################################################################################################
 
-# Define the project name to be used in the code
+# Define the project's name to be used in the code
 set(ROBOCIN_PROJECT_NAME ${CMAKE_PROJECT_NAME})
 
 ########################################################################################################################
 
-# Define the project path to be used in the code
+# Define the project's path to be used in the code
 get_filename_component(ROBOCIN_PROJECT_PATH "${CMAKE_CURRENT_LIST_DIR}/.." ABSOLUTE)
 
 ########################################################################################################################
@@ -86,7 +86,7 @@ function(robocin_cpp_proto_library)
 
         install(FILES ${HDR_FILE} DESTINATION "${header_install_path}")
     endforeach ()
-    #  - install library
+    #  - install the project's library
     install(TARGETS ${ARG_NAME} EXPORT "${PROJECT_NAME}Targets")
     #  - install CMake configuration files
     install(
